@@ -5,7 +5,7 @@ CryptPickle allows you to easily encrypt python objects into a file and decrypt,
 It may be any python object, including for example a Pandas DataFrame.
 """
 
-__version__ = "0.1"
+__version__ = "0.2"
 
 
 import pyzipper
