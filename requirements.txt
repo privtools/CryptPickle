@@ -4,7 +4,7 @@
 #
 #    pip-compile
 #
-file:./
+cryptpickle==0.4
     # via -r requirements.in
 numpy==1.23.2
     # via pandas
