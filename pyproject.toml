@@ -6,6 +6,10 @@ build-backend = "flit_core.buildapi"
 name = "cryptpickle"
 authors = [{name = "Privacy-Dad", email = "privacy-dad@protonmail.com"}]
 dynamic = ["version", "description"]
+license = {file = "LICENSE.txt"}
+dependencies = [
+    "pyzipper"
+]
 
 [project.urls]
 Home = "https://github.com/privtools/CryptPickle"
