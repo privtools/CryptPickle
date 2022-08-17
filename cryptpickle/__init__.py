@@ -1,5 +1,7 @@
 """
 Library for encrypted python object serialization
+
+CryptPickle allows you to easily encrypt python objects into a file and decrypt, regardless of their content. It may be any python object, including for example a Pandas DataFrame.
 """
 
 __version__ = "0.1"
