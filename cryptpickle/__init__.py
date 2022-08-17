@@ -7,7 +7,7 @@ It may be any python object, including for example a Pandas DataFrame.
 """
 
 
-__version__ = "0.3"
+__version__ = "0.4"
 
 
 import pickle
@@ -37,4 +37,3 @@ def obj_from_encrypted(password=NO_PASSWD, path=DATA_PATH):
         zf.setpassword(pwd.encode('utf-8'))
         buf = zf.read('data')
     return pickle.loads(buf)
-    
