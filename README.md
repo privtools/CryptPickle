@@ -1,5 +1,5 @@
 # CryptPickle
-##Encrypted python object serialization
+## Encrypted python object serialization
 CryptPickle allows you to easily encrypt python objects into a file and decrypt, regardless of their content. It may be any python object, including for example a Pandas DataFrame.
 
 Usage example 1 (Encrypt and Decrypt a dict with some sensible data):
