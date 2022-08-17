@@ -1,7 +1,8 @@
 # CryptPickle
-Encrypted python object serialization
+##Encrypted python object serialization
+CryptPickle allows you to easily encrypt python objects into a file and decrypt, regardless of their content. It may be any python object, including for example a Pandas DataFrame.
 
-Usage example:
+Usage example 1 (Encrypt and Decrypt a dict with some sensible data):
 ```
 import cryptpickle
 
@@ -23,6 +24,29 @@ ej2 =cryptpickle.obj_from_encrypted(password="SecretPassword",path='./file.crypt
 print(ej2)
 ```
 
+Usage example 2 (Encrypt and Decrypt a Pandas DataFrame with some sensible data):
+```
+import cryptpickle
+import pandas as pd
+
+# Create a dictionary with some data
+df1 = pd.DataFrame({'A': [1, 2, 3],
+                   'B': ['one', 'one', 'four']})
+
+# Print the data
+print(df1)
+
+# Serialice the data in an encrypted file (path) with a password (password)
+cryptpickle.obj_to_encrypted(df11,password="SecretPassword",path='./pd_data.crypt')
+
+# Load the serialiced data in other Pandas DataFrame.
+df2 =cryptpickle.obj_from_encrypted(password="SecretPassword",path='./pd_data.crypt')
+
+# Print the data
+print(df2)
+```
+
+
 ## Install and try it (Linux)
 
 1. Clone this repository and enter in the directory:
@@ -43,10 +67,15 @@ source .venv/bin/activate
 
 4. Install the package:
 ```
-pip install .
+pip install -r requirements.txt
 ```
 
-5. Run the sample:
+5. Run sample1:
 ```
-python sample.py
+python sample1.py
+```
+
+5. Run sample2:
+```
+python sample2.py
 ```
