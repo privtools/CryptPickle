@@ -1,8 +1,13 @@
 # CryptPickle
 ## Encrypted python object serialization
 
-[![python](https://img.shields.io/badge/python-3.9-blue.svg?logo=python&labelColor=yellow)](https://www.python.org/downloads/)
+[![python](https://img.shields.io/pypi/pyversions/cryptpickle)](https://www.python.org/downloads/)
+
+[![python](https://img.shields.io/github/license/privtools/CryptPickle)](https://github.com/privtools/CryptPickle/blob/main/LICENSE.txt)
+
 [![Downloads](https://static.pepy.tech/personalized-badge/cryptpickle?period=total&units=international_system&left_color=grey&right_color=blue&left_text=Downloads)](https://pepy.tech/project/cryptpickle)
+
+[![Issues](https://img.shields.io/github/issues/privtools/CryptPickle)]
 
 CryptPickle allows you to easily encrypt python objects into a file and decrypt, regardless of their content. It may be any python object, including for example a Pandas DataFrame.
 ## Install
