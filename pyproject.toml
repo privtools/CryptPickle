@@ -6,7 +6,7 @@ build-backend = "flit_core.buildapi"
 name = "cryptpickle"
 authors = [{name = "Privacy-Dad", email = "privacy-dad@protonmail.com"}]
 dynamic = ["version"]
-license = {file = "LICENSE.txt"}
+license = {file = "./LICENSE.txt"}
 description = "Encrypted python object serialization"
 readme = "README.md"
 dependencies = [
