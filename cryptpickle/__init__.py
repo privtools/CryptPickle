@@ -7,7 +7,7 @@ It may be any python object, including for example a Pandas DataFrame.
 """
 
 
-__version__ = "0.8"
+__version__ = "0.9"
 
 
 import pickle
