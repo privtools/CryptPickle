@@ -16,7 +16,7 @@ pip install cryptpickle
 ## Examples
 
 Usage example 1 (Encrypt and Decrypt a dict with some sensible data):
-```
+```python
 import cryptpickle
 
 # Create a dictionary with some data
@@ -38,7 +38,7 @@ print(ej2)
 ```
 
 Usage example 2 (Encrypt and Decrypt a Pandas DataFrame with some sensible data):
-```
+```python
 import cryptpickle
 import pandas as pd
 
