@@ -1,2 +1,2 @@
-cryptpickle
-pandas
+cryptography
+pandas>=2.0
