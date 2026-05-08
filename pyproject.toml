@@ -9,14 +9,12 @@ dynamic = ["version"]
 license = {file = "LICENSE.txt"}
 description = "Encrypted python object serialization"
 readme = "README.md"
-requires-python = ">=3.8"
+requires-python = ">=3.10"
 dependencies = [
     "cryptography"
 ]
 
 classifiers = [
-    "Programming Language :: Python :: 3.8",
-    "Programming Language :: Python :: 3.9",
     "Programming Language :: Python :: 3.10",
     "Programming Language :: Python :: 3.11",
     "Programming Language :: Python :: 3.12",
