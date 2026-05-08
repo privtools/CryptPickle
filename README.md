@@ -8,6 +8,15 @@
 ![Test](https://github.com/privtools/CryptPickle/actions/workflows/test-module.yml/badge.svg)
 
 CryptPickle allows you to easily encrypt python objects into a file and decrypt, regardless of their content. It may be any python object, including for example a Pandas DataFrame.
+
+## Migration from v0.x
+
+> **Breaking change**: CryptPickle 1.0 changes the encryption format from AES-ZIP
+> (pyzipper) to AES-256-GCM with PBKDF2 (cryptography). Files created with versions
+> prior to 1.0 are **not readable** with this version.
+>
+> To migrate existing data: decrypt with CryptPickle 0.9, then re-encrypt with CryptPickle 1.0.
+
 ## Install
 ```
 pip install cryptpickle
@@ -50,7 +59,7 @@ df1 = pd.DataFrame({'A': [1, 2, 3],
 print(df1)
 
 # Serialice the data in an encrypted file (path) with a password (password)
-cryptpickle.obj_to_encrypted(df11,password="SecretPassword",path='./pd_data.crypt')
+cryptpickle.obj_to_encrypted(df1,password="SecretPassword",path='./pd_data.crypt')
 
 # Load the serialiced data in other Pandas DataFrame.
 df2 =cryptpickle.obj_from_encrypted(password="SecretPassword",path='./pd_data.crypt')

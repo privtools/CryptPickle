@@ -131,3 +131,5 @@ dmypy.json
 #Crypt data
 *.crypt
 .vscode/
+
+CLAUDE.md
